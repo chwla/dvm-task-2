@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Merriweather:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Libre&family=Baloo+Bhaina+2&family=Cabin&family=Merriweather&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title>APOGEE Events Management System</title>
+</head>
+
+<body>
+    <header>
+        <h1>APOGEE Events Management System</h1>
+    </header>
+    <section class="body">
+        <fieldset class="credentials">
+            <legend>User Details</legend>
+            <div>
+                <label for="name" class="name">
+                    Name
+                    <input type="text" id="name" placeholder="Name" maxlength="20" required>
+                    <p class="invalid" id="invalid-1">Invalid Name !!</p>
+                </label>
+                <label for="id" class="id">
+                    BITS ID
+                    <input type="text" id="id" placeholder="BITS ID" required>
+                    <p class="invalid" id="invalid-2">Invalid ID !!</p>
+                </label>
+                <label for="phone" class="phone">
+                    Contact No.
+                    <input type="number" id="phone" placeholder="Contact No." max="9999999999" min="0000000000" required>
+                    <p class="invalid" id="invalid-3">Invalid Contact !!</p>
+                </label>
+            </div>
+            <img src="https://cdn.icon-icons.com/icons2/2550/PNG/512/user_circle_icon_152504.png" alt="">
+        </fieldset>
+
+        <fieldset class="delivery">
+            <legend>Event Details</legend>
+            <form action="" id="Delivery-form">
+                <label for="exp-date">
+                    Event's Start Date
+                    <input type="date" name="exp-date" id="exp-date" placeholder="Event's Start Date" required>
+                </label>
+                <label for="rec-date">
+                    Event's Last Date
+                    <input type="date" name="rec-date" id="rec-date" placeholder="Event's Last Date" required>
+                </label>
+                <label for="demanded">
+                    Department's Name
+                    <input type="text" name="demanded" id="demanded" placeholder="Department's Name" required>
+                </label>
+                <label for="received">
+                    Event's Name
+                    <input type="text" name="received" id="received" placeholder="Event's Name" required>
+                </label>
+            </form>
+            <div class="buttons">
+                <input type="submit" class="btn" id="submit" value="Submit">
+                <button id="clear" class="btn">Clear</button>
+            </div>
+        </fieldset>
+
+        <div class="records">
+            <h2>Records</h2>
+        </div>
+        <script src="script.js"></script>
+    </section>
+</body>
+
+</html>

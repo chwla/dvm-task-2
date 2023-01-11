@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    font-family: 'Averia Libre';
+}
+
+body{
+    background-color: #DCDCDC;
+}
+
+.body{
+    width: 60%;
+    margin: 10vh auto;
+}
+
+
+header{
+    background-color: #a6aeae73;
+}
+
+h1 {
+    text-align: center;
+    padding: 3vh;
+    color: #000000;
+}
+
+fieldset{
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    background-color: #f4d2d226;
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10vh auto;
+}
+
+label{
+    padding: 0.5rem;
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #7a7a6e;
+    margin: 1rem;
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+}
+
+input {
+    padding: 0 0.5rem;
+    float: right;
+    margin: 0 1rem;
+    font-family: 'Merriweather', serif;
+}
+
+.delivery{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.invalid{
+    display: none;
+    float: right;
+    width: 50%;
+    color: red;
+    font-size: small;
+    font-weight: 200;
+    padding-top: 2px;
+}
+
+#submit{
+    float: left;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn{
+    padding: 1vh 2vh;
+    font-size: 1rem;
+    border-radius: 3vh;
+    background: #8a86864d;
+    color: #000000;
+    cursor: pointer;
+}
+
+#submit{
+    margin-bottom: 2%;
+}
+
+.records{
+    display: none;
+    color: #9d9e9e;
+}
+
+.records h2{
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.del-btn{
+    height: fit-content;
+    margin: auto 0;
+}
+
+.records-content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.records-content p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.records>div{
+    display: flex;
+}

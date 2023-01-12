@@ -1,0 +1,57 @@
+body{
+    background-color: #d7ecff;
+    font-family: 'Averia Libre';
+}
+.header{
+    margin: 10vh auto;
+    background-color: #f0f8ff
+}
+
+fieldset{
+    border: 5px solid #a4d4ff;
+    background-color: #bde0ff;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+}
+
+.button{
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 30px;
+    background-color: #bde0ff;
+}
+
+.records{
+    display: none;
+}
+
+.invalid1{
+    color: red;
+    display: none;
+}
+
+.invalid2{
+    color: red;
+    display: none;
+}
+
+.invalid3{
+    color: red;
+    display: none;
+}
+
+.invalid4{
+    color: red;
+    display: none;
+}
+
+.rec{
+    color: black;
+}
+
+.button{
+    text-align: center;
+
+}

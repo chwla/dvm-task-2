@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Apogee event management system</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div id="header">
+    <nav> <h2 class="text-center my-2" >APOGEE event management system</h2> </nav>
+    </div>
+
+    <fieldset id="user-details">
+        <legend> User Details</legend>
+        <div>
+        <form action="">
+        <div class="form-group mt-2">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter name here" required>
+            <p id="invalid1" class="invalid1">Invalid Name!</p>
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="id">BITS ID</label>
+            <input type="text" id="id" placeholder="Enter BITS id here" required>
+            <p id="invalid2" class="invalid2">Invalid Id!</p>
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="no">Contact No.</label>
+            <input type="number" id="no" placeholder="Enter contact no. here" required>
+            <p id="invalid3"class="invalid3">Invalid Number!</p>
+        </div>
+        </form>
+
+        </div>
+    </fieldset>
+
+    <fieldset id="event-details"> 
+        <legend>Event Details</legend>
+
+        <form action="">
+        <div class="form-group mt-2">
+            <label for="start_date">Event's Starting Date</label>
+            <input type="date" id="start_date" placeholder="Enter event's starting date here" required>
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="end_date">Event's Last Date</label>
+            <input type="date" id="end_date" placeholder="Enter event's last date here" required>
+            <p id="invalid4" class="invalid4">Invalid Date!</p>
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="dept">Enter Department's name</label>
+            <input type="text" id="dept" placeholder="Enter Department's name here" required>
+        </div>
+        
+        <div class="form-group mt-2">
+            <label for="event">Enter Event's name</label>
+            <input type="text" id="event" placeholder="Enter Event's name here" required>
+        </div>
+        </form>
+
+    </fieldset>
+
+            <div class="container">
+                <input type="submit" class="button" id="submit" value="Submit">
+                <input type="button" class="button" id="clear" value="Clear">
+            </div>
+        
+        <fieldset id="records" class="records">
+        <div>
+            <h3>Records</h3>
+        </div>
+        </fieldset>
+
+    <script src="script.js"></script>
+  </body>
+</html>
